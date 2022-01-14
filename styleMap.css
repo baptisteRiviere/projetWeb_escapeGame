@@ -1,0 +1,227 @@
+
+
+html { /* enlever le défilement de la page */
+  overflow: hidden;
+  /*Changement de police*/
+  font-size:1vw;
+  font-family: Montserrat, sans-serif;
+  font-weight:bold;
+  background: #A7CECB;
+  background-image:url("img/fond_ecran.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+
+
+body{
+  height:100vh;
+  display: grid;
+  grid-template-columns: 20% 1fr 12%;
+  grid-template-rows: 10% 10% 1fr 30%;
+  margin:0;
+}
+
+
+#menu{ /* div en haut à gauche*/
+  grid-column: 1;
+  grid-row: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+#compteur_conteneur{
+  grid-column: 1;
+  grid-row: 2;
+  font-size:2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+#inventory{ /* div à droite*/
+  grid-column: 3;
+  grid-row: 1/5;
+  margin: 5%;
+  display: flex;
+	flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-radius: 25px;
+  background: #775B53;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+
+.img_inventory{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+#slot_1{
+  grid-column: 1;
+  grid-row: 1;
+
+  margin: 10%;
+  margin-bottom: 5%;
+  padding: 10%;
+
+  display: flex;
+	flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 25px;
+  background:#674F48
+}
+
+
+#slot_2{
+  grid-column: 1;
+  grid-row: 2;
+
+  margin: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 25px;
+  background:#674F48
+}
+
+#slot_3{
+  grid-column: 1;
+  grid-row: 3;
+
+  margin: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 15%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 25px;
+  background:#674F48
+}
+
+
+#slot_4{
+  grid-column: 1;
+  grid-row: 4;
+  margin: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+  padding: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 25px;
+  background:#674F48
+}
+
+
+#slot_5{
+  grid-column: 1;
+  grid-row: 5;
+
+  margin: 10%;
+  margin-top: 5%;
+  padding: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 25px;
+  background:#674F48
+}
+
+#map{
+  grid-column: 2;
+  grid-row: 1 / 5 ;
+  margin: 1%;
+  margin-left: 0px;
+  margin-right: 0px;
+  border-radius: 25px;
+}
+
+
+#quest{ /* div à gauche*/
+  max-width: 100%;
+  max-height: 100%;
+
+  font-size:120%;
+  grid-column: 1;
+  grid-row: 3;
+  margin: 10%;
+  padding: 5%;
+  display: flex;
+	flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-variant-caps: small-caps;
+  background: #e9e1a0;
+  border-radius: 25px;
+}
+
+
+.people{/*personnes des quetes*/
+  position: absolute;
+   top: 10%;
+   left: 1%;
+   z-index: 500;
+   max-width: 20%;
+   max-height: 20%;
+}
+
+
+.img_car{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+#divText{
+  display: flex;
+  flex-direction: column;
+}
+
+
+#car{ /* retour au bruzet*/
+  grid-column: 1;
+  grid-row: 4;
+  margin: 1%;
+  margin-top:0px;
+  padding: 15%;
+  display: flex;
+	flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 25px;
+  text-shadow: -1px 0 white, 0 1px white,
+        1px 0 white, 0 -1px white;
+
+}

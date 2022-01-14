@@ -1,0 +1,184 @@
+
+html { /* enlever le défilement de la page */
+  overflow: hidden;
+
+  /*Changement de police*/
+  font-family: Montserrat, sans-serif;
+  font-size:1vw;
+  background: #ffe8d6;
+  background-image:url("img/fond_ecran.jpg");
+  background-size: cover;
+  background-position: bottom;
+
+}
+
+body{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 30%;
+  grid-template-rows:  1fr 20% 15%;
+  margin:0;
+}
+
+
+#launcher{
+  grid-row: 2;
+  grid-column: 1;
+  margin: 1%;
+
+  display: flex;
+  align-items: space-around;
+  justify-content: center;
+}
+
+
+form {
+  max-height: 100%;
+  width: 70%;
+
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+}
+
+
+input#pseudo{
+  grid-row: 1;
+	background-color: #ddbea9;
+  margin: 1%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+#description{
+  grid-column: 1;
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: 30% 1fr 30%;
+  grid-template-rows: 100%;
+}
+
+
+#droite{
+  grid-column: 1;
+  grid-row: 1;
+  padding: 10%;
+}
+
+
+@keyframes bounce{/*animation des lapins*/
+     from {transform: translateY(-10px);}
+      50%  {transform:  translateY(-15px);}
+     to   {transform: translateY(-10px);}
+}
+
+
+#gauche{
+  grid-column: 3;
+  grid-row: 1;
+  padding: 10%;
+}
+
+
+#divText{
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#php{
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+
+}
+
+#divLogos{
+  grid-row: 3;
+  grid-column: 1;
+
+  display: flex;
+  margin: 1%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  z-index: 500;
+
+}
+
+
+.logo {
+  max-width: 100%;
+  max-height: 100%;
+  margin:0px;
+}
+
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  margin:0px;
+}
+
+
+#description div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#description p{
+
+  font-weight: 500;
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+.allezSVP{
+  text-decoration: line-through;
+  font-weight: 700;
+}
+
+
+#hallOfFame{
+  grid-row: 1/4;
+  grid-column: 2;
+  margin:5%;
+  border: solid 10px #cb997e;
+  background: #ddbea9;
+}
+
+
+#hallOfFame h1{
+  text-align:center;
+  font-family: 'Bonheur Royale';
+  font-size: 6vw;
+  margin:5%;
+}
+
+
+#table{
+  font-size: 2vw;
+  padding: :5%;
+
+}
+
+
+#hallOfFame td{
+  margin: 5%;
+}
+
+
+#hallOfFame .score{
+  padding-left: 1vw;
+  padding-right: 2vw;
+  font-weight: 700;
+}
