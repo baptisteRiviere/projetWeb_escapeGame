@@ -5,7 +5,14 @@ Ce script contient tout le déroulé du jeu
 
 
 // Création de la carte
-let map = L.map('map').setView([44.051830,5.796145], 18);
+let map = L.map('map', {
+  minZoom: 2,
+  maxBounds: [
+      [-90, -200], //south west
+      [+90, +200] // //north east
+      ],
+}).setView([44.051830,5.796145], 18);
+
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
         zoom:19,
