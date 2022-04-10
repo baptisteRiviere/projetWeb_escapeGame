@@ -13,12 +13,16 @@ let map = L.map('map', {
       ],
 }).setView([44.051830,5.796145], 18);
 
+// var serviceUrl = 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}';
+// var credits = 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012 etc. etc. etc.';
+// L.tileLayer(serviceUrl, {
+//         attribution: credits,
+//         zoom:19
+//     }).addTo(map);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
         zoom:19,
     }).addTo(map);
-
-
 
 // initialisation des variables
 
