@@ -1,8 +1,8 @@
 <?php
   include "connect.php";
 
-  $requete = "SELECT score,nom FROM hallOfFame ORDER BY score DESC LIMIT 10";
-
+  $requete = "SELECT score,nom FROM halloffame ORDER BY score DESC LIMIT 10";
+  
   $tableau = [];
   if ($result = mysqli_query($link,$requete)) {
     while ($ligne = mysqli_fetch_assoc($result)) {

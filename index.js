@@ -4,11 +4,11 @@ var lapin2 = document.getElementById("lapin2");
 var divText = document.getElementById("divText");
 var bravoText = document.getElementById("bravo").textContent;
 
-var lapin1_HTML_depart = "<p id='textDescr' style='font-size:1.8vw'> Nous avons mis <strong> énormément de temps </strong> à développer ce jeu pour <strong class='allezSVP'>que Victor et Amaury nous mettent un ptit 20</strong> te faire découvrir la vie au BDE qui, tu le verras, est faite de situations totalement délirantes mais (presque) totalement vraies ! </p>";
+var lapin1_HTML_depart = "<p id='textDescr' style='font-size:1.8vw'> Nous avons mis <strong> énormément de temps </strong> à développer ce jeu pour <strong class='allezSVP'>que Victor et Amaury nous mettent un petit 20</strong> te faire découvrir la vie au BDE qui, tu le verras, est faite de situations totalement délirantes mais (presque) totalement vraies ! </p>";
 var lapin1_HTML_fin = "<img src='img/freddie-mercury.gif'>";
-var lapin2_HTML_depart = "<p id='textDescr' style='font-size:1.9vw'> Pour te montrer ça on t'emmène à Forca, tu vas rencontrer notre présidente: Ilona, elle te dira quoi faire là bas ! Un dernier petit conseil: Si très vite tu vas, dans le Hall of Fame tu seras </p>";
+var lapin2_HTML_depart = "<p id='textDescr' style='font-size:1.9vw'> On va t'emmener à Forca où tu pourras rencontrer notre présidente : Ilona, elle te dira quoi faire là bas ! Je te donne un petit conseil: Si très vite tu vas, dans le Hall of Fame tu seras </p>";
 var lapin2_HTML_fin = "<img src='img/congrats.gif'>";
-var base_HTML_depart = "<p id='textDescr' style='font-size:2vw'><strong style='text-decoration: underline;'>Micmac au Bruzet</strong>Bienvenue à toi cher visiteur ! Nous sommes Léa et Baptiste: deux étudiants de l'ENSG géomatique ET membres du BDE de cette même école ! Passe ta souris sur nos lapins pour en savoir plus</p>";
+var base_HTML_depart = "<p id='textDescr' style='font-size:2vw'><strong style='text-decoration: underline;'>Micmac au Bruzet</strong>Bienvenue à toi cher visiteur ! Nous sommes Léa et Baptiste: deux étudiants à l'ENSG géomatique ET ex-membres du BDE de cette même école ! Passe ta souris sur nos lapins pour en savoir plus</p>";
 var base_HTML_fin = "<p id='textDescr' style='font-size:2vw'>" + bravoText +"</p>";
 
 

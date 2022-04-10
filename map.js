@@ -5,13 +5,30 @@ Ce script contient tout le déroulé du jeu
 
 
 // Création de la carte
-let map = L.map('map').setView([44.051830,5.796145], 18);
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-        zoom:19,
-    }).addTo(map);
+let map = L.map('map', {
+  minZoom: 2,
+  maxBounds: [
+      [-90, -200], //south west
+      [+90, +200] // //north east
+      ],
+}).setView([44.051830,5.796145], 18);
 
+// var serviceUrl = 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}';
+// var credits = 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012 etc. etc. etc.';
+// L.tileLayer(serviceUrl, {
+//         attribution: credits,
+//         zoom:19
+//     }).addTo(map);
+// L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+//         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+//         zoom:19,
+//     }).addTo(map);
 
+googleHybrid = L.tileLayer('http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}',{
+    maxZoom: 20,
+    subdomains:['mt0','mt1','mt2','mt3']
+});
+googleHybrid.addTo(map);
 
 // initialisation des variables
 
