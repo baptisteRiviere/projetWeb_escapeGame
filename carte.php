@@ -49,6 +49,10 @@
           }
         ?>
       </div>
+      <div id="map_base">
+        <a class="bouton1">Changer le fond de carte</a>
+      </div>
+        
 
       <div id="inventory">
         <div id="slot_1">
