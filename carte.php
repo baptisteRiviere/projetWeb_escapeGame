@@ -32,8 +32,6 @@
       </div>
 
       <div id="quest">
-
-
         <p id="quest_text" class="img_inventory">Pas de mission en cours</p>
       </div>
 
@@ -52,7 +50,7 @@
       <div id="map_base">
         <a class="bouton1">Changer le fond de carte</a>
       </div>
-        
+
 
       <div id="inventory">
         <div id="slot_1">

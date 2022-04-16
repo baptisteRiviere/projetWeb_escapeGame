@@ -33,6 +33,16 @@ body{
   text-align: center;
 }
 
+#map_base{ /* div en bas à gauche*/
+  grid-column: 1;
+  grid-row: 4;
+  margin-top: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
 #compteur_conteneur{
   grid-column: 1;
